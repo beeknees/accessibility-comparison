@@ -1,0 +1,228 @@
+/* ---------------------------------------------------------------------
+ Modern Styles
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline: 0; }
+
+html {
+  overflow-y: scroll;
+  /* Always show a vertical scrollbar, even when there is no scrolling */ }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ---------------------------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ---------------------------------------------------------------------
+ Form Reset Styles
+------------------------------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+.masthead {
+  background-color: #C3CAD5;
+  padding: 10px;
+  margin-bottom: 25px; }
+
+.masthead:before,
+.masthead:after {
+  content: '';
+  display: table; }
+
+.masthead:after {
+  clear: both; }
+
+.footer {
+  border-top: 1px solid #292D33;
+  margin-top: 20px;
+  padding: 20px 0;
+  text-align: center; }
+
+.navbar {
+  float: left; }
+
+.navbar > * {
+  display: inline-block;
+  font-size: 1rem; }
+
+.navbar-item + .navbar-item {
+  margin-left: 20px; }
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none; }
+
+.navbar-link:focus {
+  outline: 5px;
+  border: 1px solid green; }
+
+.subnav {
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #292D33; }
+
+.navbar-item:hover .subnav {
+  display: block; }
+
+.subnav-item + .subnav-item {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #292D33; }
+
+.subnav-link {
+  color: #292D33;
+  text-decoration: none; }
+
+.searchBar {
+  float: right; }
+
+.breadcrumb {
+  margin-bottom: 25px; }
+
+.breadcrumb > * {
+  display: inline-block; }
+
+.breadcrumb > * + *:before {
+  content: '>';
+  padding: 0 5px; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.content-hdg {
+  margin-bottom: 25px; }
+
+p {
+  line-height: 1.25rem;
+  font-size: .75rem;
+  color: #a58a1d; }
+
+p + p {
+  margin-top: 10px; }
+
+.input {
+  padding: 8px;
+  border: 1px solid #292D33;
+  border-radius: 3px; }
+
+.searchBar {
+  position: relative; }
+
+.searchBar:after {
+  content: '';
+  display: block;
+  background: url(http://metc-mnucp.nerderylabs.com/App_Themes/FlexoMNUCP/images/search-btn.png) no-repeat right center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.logo {
+  margin-right: 20px;
+  float: left; }
+
+a {
+  color: #428bca; }
+
+a:focus {
+  border: 1px solid green; }
+
+.hdg {
+  font-size: 1.5rem; }
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #a58a1d;
+  color: #ffffff; }
+
+.vList > * {
+  display: block; }
+
+.vList > * + * {
+  margin-top: 20px; }

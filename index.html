@@ -1,54 +1,85 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Accessibility</title>
-    </head>
-    <body>
-        <header class="masthead">
-          <div class="wrapper">
-            <img src="http://placehold.it/100x100?text=logo" class="logo" />
-            <ul class="navbar">
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">About</a>
-                <ul class="subnav">
-                  <li class="subnav-item">
-                    <a href="#" class="subnav-link">How we started</a>
-                  </li>
-                  <li class="subnav-item">
-                    <a href="#" class="subnav-link">About the Team</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link">News</a>
-              </li>
-            </ul>
-            <div class="searchBar">
-              <input type="search" name="search" id="search" />
-            </div>
-          </div> <!-- /wrapper -->  
-        </header>
+<html class="no-js" lang="en-us">
+<head>
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <!-- SEO -->
+    <title>Compare Accessibility</title>
+
+    <!-- STYLESHEETS -->
+    <!-- build:css assets/styles/head.css?v=1.0.0 -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=1.0.0" />
+    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=1.0.0" /><![endif]-->
+
+    <!-- POLYFILLS -->
+    <!-- build:js assets/scripts/head.js?v=1.0.0 -->
+    <!-- endbuild -->
+</head>
+<body>
+    <!-- CONTENT -->
+    <header class="masthead">
         <div class="wrapper">
-          <div class="content">
+            <img src="http://placehold.it/100x100?text=logo" class="logo" />
+            <div class="searchBar">
+            <!-- <label for="search">Search</label> -->
+              <input type="search" name="search" id="search" class="input" />
+            </div>
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">About</a>
+                    <ul class="subnav">
+                      <li class="subnav-item">
+                        <a href="#" class="subnav-link">How we started</a>
+                      </li>
+                      <li class="subnav-item">
+                        <a href="#" class="subnav-link">About the Team</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">News</a>
+                </li>
+            </ul>
+        </div> <!-- /wrapper -->  
+    </header>
+    <div class="wrapper">
+        <div class="content">
             <div class="content-hdg">
-              <h1 class="hdg">About the Team</h1>
+              <h3 class="hdg">About the Team</h3>
+              <h1 class="hdg">and how we work for you</h1>
             </div>
             <div class="breadcrumb">
               <a href="#">About</a>
               <span>About the Team</span>
             </div>
-            <p>Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
-            <p>Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
-          </div>
-        </div> <!-- /wrapper -->
-        <footer class="footer">
-          <div class="wrapper">
+            <ul class="vList">
+                <li>
+                    <img src="http://loremflickr.com/320/240" />
+                    <p>Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
+                    <button class="btn">Read more</button>
+                </li>
+                <li>
+                    <p>Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
+                    <button class="btn">Read more</button>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /wrapper -->
+    <footer class="footer">
+        <div class="wrapper">
             <span>&copy; Copyright 2016 | All Rights Reserved | <a href="#">Contact info</a></span>
-          </div> <!-- /wrapper -->
-        </footer>
+        </div> <!-- /wrapper -->
+    </footer>
 
-    </body>
+
+    <!-- JAVASCRIPT -->
+</body>
 </html>
