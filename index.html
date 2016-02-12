@@ -22,47 +22,57 @@
 </head>
 <body>
     <!-- CONTENT -->
+    <!-- !NO ARIA ROLE -->
     <header class="masthead">
         <div class="wrapper">
-            <img src="http://placehold.it/100x100?text=logo" class="logo" />
-            <div class="searchBar">
-            <!-- <label for="search">Search</label> -->
-              <input type="search" name="search" id="search" class="input" />
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="http://placehold.it/300x100/000000?text=Your Company Logo" />
+                    <!-- !NO ALT TEXT -->
+                </a>
+                <div class="searchBar">
+                  <input type="search" name="search" id="search" class="input" />
+                  <!-- !NO LABEL -->
+                </div>
+                <!-- !NO ARIA ROLE -->
+                <ul class="navbar">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link navbar-link_active">About</a>
+                        <ul class="subnav">
+                          <li class="subnav-item">
+                            <a href="#" class="subnav-link">How we started</a>
+                          </li>
+                          <li class="subnav-item">
+                            <a href="#" class="subnav-link">About the Team</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">News</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar">
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link">Home</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link">About</a>
-                    <ul class="subnav">
-                      <li class="subnav-item">
-                        <a href="#" class="subnav-link">How we started</a>
-                      </li>
-                      <li class="subnav-item">
-                        <a href="#" class="subnav-link">About the Team</a>
-                      </li>
-                    </ul>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link">News</a>
-                </li>
-            </ul>
         </div> <!-- /wrapper -->  
     </header>
     <div class="wrapper">
-        <div class="content">
-            <div class="content-hdg">
-              <h3 class="hdg">About the Team</h3>
-              <h1 class="hdg">and how we work for you</h1>
+        <div class="page">
+            <div class="page-hdg">
+                <!-- !INCORRECT HIERARCHY -->
+                <h3 class="hdg hdg_1">About the Team</h3>
+                <h1 class="hdg hdg_2">and how we work for you</h1>
             </div>
+            <!-- !NO ARIA ROLE -->
             <div class="breadcrumb">
               <a href="#">About</a>
               <span>About the Team</span>
             </div>
             <ul class="vList">
                 <li>
-                    <img src="http://loremflickr.com/320/240" />
+                    <!-- !NO ALT ATTRIBUTE -->
+                    <img src="https://placebear.com/g/320/240" />
                     <p>Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
                     <button class="btn">Read more</button>
                 </li>
@@ -73,6 +83,7 @@
             </ul>
         </div>
     </div> <!-- /wrapper -->
+    <!-- !NO ARIA ROLE -->
     <footer class="footer">
         <div class="wrapper">
             <span>&copy; Copyright 2016 | All Rights Reserved | <a href="#">Contact info</a></span>
@@ -81,5 +92,12 @@
 
 
     <!-- JAVASCRIPT -->
+    <!-- build:js assets/scripts/main.js?v=1.0.0 -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <script src="assets/scripts/shim.js?v=1.0.0"></script>
+    <script src="assets/scripts/App.js?v=1.0.0"></script>
+    <script src="assets/scripts/main.js?v=1.0.0"></script>
+    <!-- endbuild -->
 </body>
 </html>
