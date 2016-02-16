@@ -119,6 +119,9 @@ body {
 .masthead:after {
   clear: both; }
 
+.masthead_darker {
+  background-color: #69788c; }
+
 .footer {
   background-color: #C3CAD5;
   border-top: 1px solid #292D33;
@@ -143,6 +146,9 @@ body {
 
 .navbar-link_active {
   background-color: #C3CAC4; }
+
+.navbar-link_darker {
+  color: black; }
 
 .subnav {
   display: none;
@@ -174,6 +180,12 @@ body {
   content: '>';
   padding: 0 5px; }
 
+.breadcrumb-link {
+  color: #a58a1d; }
+
+.breadcrumb-link_darker {
+  color: #8d7400; }
+
 .wrapper {
   width: 100%;
   max-width: 1025px;
@@ -194,6 +206,9 @@ p {
 p + p {
   margin-top: 10px; }
 
+.txt {
+  color: #333; }
+
 .logo {
   margin-right: 20px;
   /*float: left;*/ }
@@ -211,6 +226,20 @@ p + p {
   position: absolute;
   right: 0;
   top: 0; }
+
+.skip a {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.skip a:focus {
+  left: 5px;
+  width: auto;
+  height: auto;
+  overflow: visible; }
 
 .btn {
   border: none;
@@ -239,8 +268,11 @@ p + p {
   display: inline-block;
   vertical-align: middle; }
 
-a {
+.anchor {
   color: #428bca; }
+
+.anchor_midnight {
+  color: #00598c; }
 
 .btn {
   border: none;

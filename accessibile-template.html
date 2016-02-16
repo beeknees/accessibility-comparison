@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+<head>
+    <!-- META DATA -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
+    <!-- SEO -->
+    <title>Compare Accessibility</title>
+
+    <!-- STYLESHEETS -->
+    <!-- build:css assets/styles/head.css?v=1.0.0 -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=1.0.0" />
+    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=1.0.0" /><![endif]-->
+
+    <!-- POLYFILLS -->
+    <!-- build:js assets/scripts/head.js?v=1.0.0 -->
+    <!-- endbuild -->
+</head>
+<body>
+    <!-- CONTENT -->
+    <!-- !NO ARIA ROLE -->
+    <div class="skip">
+        <a href="#main">Skip to Main Content</a>
+    </div>
+    <header class="masthead masthead_darker" role="banner">
+        <div class="wrapper">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="http://placehold.it/300x100/000000?text=Your Company Logo" />
+                    <!-- !NO ALT TEXT -->
+                </a>
+                <div class="searchBar">
+                    <label for="search" class="visuallyHidden">Search</label>
+                    <input type="search" name="search" id="search" class="input" />
+                  <!-- !NO LABEL -->
+                </div>
+                <!-- !NO ARIA ROLE -->
+                <ul class="navbar navbar_darker" role="navigation">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link navbar-link_active">About</a>
+                        <ul class="subnav">
+                          <li class="subnav-item">
+                            <a href="#" class="subnav-link">How we started</a>
+                          </li>
+                          <li class="subnav-item">
+                            <a href="#" class="subnav-link">About the Team</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /wrapper -->  
+    </header>
+    <div class="wrapper" role="main" id="main">
+        <div class="page">
+            <div class="page-hdg">
+                <!-- !INCORRECT HIERARCHY -->
+                <h1 class="hdg hdg_1">About the Team</h1>
+                <h2 class="hdg hdg_2">and how we work for you</h2>
+            </div>
+            <!-- !NO ARIA ROLE -->
+            <div class="breadcrumb" role="navigation">
+              <a href="#" class="breadcrumb-link breadcrumb-link_darker">About</a>
+              <span>About the Team</span>
+            </div>
+            <ul class="vList">
+                <li>
+                    <!-- !NO ALT ATTRIBUTE -->
+                    <img src="https://placebear.com/g/320/240" />
+                    <p class="txt">Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
+                    <button class="btn">Read more</button>
+                </li>
+                <li>
+                    <p class="txt">Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
+                    <button class="btn">Read more</button>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- /wrapper -->
+    <!-- !NO ARIA ROLE -->
+    <footer class="footer" role="contentinfo">
+        <div class="wrapper">
+            <span>&copy; Copyright 2016 | All Rights Reserved | <a href="#" class="anchor anchor_midnight">Contact info</a></span>
+        </div> <!-- /wrapper -->
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- build:js assets/scripts/main.js?v=1.0.0 -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <script src="assets/scripts/shim.js?v=1.0.0"></script>
+    <script src="assets/scripts/App.js?v=1.0.0"></script>
+    <script src="assets/scripts/main.js?v=1.0.0"></script>
+    <!-- endbuild -->
+</body>
+</html>
