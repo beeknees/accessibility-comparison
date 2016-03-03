@@ -9,85 +9,156 @@
     <title>Compare Accessibility</title>
 
     <!-- STYLESHEETS -->
-    <!-- build:css assets/styles/head.css?v=1.0.0 -->
+    <!-- build:css assets/styles/head.css?v=@@version -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <link rel="stylesheet" media="screen, projection" href="stylesheets/modern.css?v=1.0.0" />
-    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=1.0.0" /><![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=@@version" />
+    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=@@version" /><![endif]-->
 
     <!-- POLYFILLS -->
-    <!-- build:js assets/scripts/head.js?v=1.0.0 -->
+    <!-- build:js assets/scripts/head.js?v=@@version -->
     <!-- endbuild -->
 </head>
 <body>
     <!-- CONTENT -->
     <!-- !NO ARIA ROLE -->
-    <header class="masthead">
-        <div class="wrapper">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="http://placehold.it/300x100/000000?text=Your Company Logo" />
-                    <!-- !NO ALT TEXT -->
-                </a>
-                <div class="searchBar">
-                  <input type="search" name="search" id="search" class="input" />
-                  <!-- !NO LABEL -->
-                </div>
-                <!-- !NO ARIA ROLE -->
-                <ul class="navbar">
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link navbar-link_active">About</a>
-                        <ul class="subnav">
-                          <li class="subnav-item">
-                            <a href="#" class="subnav-link">How we started</a>
-                          </li>
-                          <li class="subnav-item">
-                            <a href="#" class="subnav-link">About the Team</a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link">News</a>
-                    </li>
-                </ul>
+    <div class="masthead">
+        <div class="masthead-inner">
+            <a href="index.html" class="logo">
+                <img src="http://placehold.it/300x100/000000?text=Your Company Logo" />
+                <!-- !NO ALT TEXT -->
+            </a>
+            <!-- !INCORRECT TAB ORDER -->
+            <div class="searchBar">
+              <input type="search" name="search" id="search" class="input" />
+              <!-- !NO LABEL -->
             </div>
-        </div> <!-- /wrapper -->  
-    </header>
-    <div class="wrapper">
+            <!-- !NO ARIA ROLE -->
+            <ul class="navbar">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link navbar-link_active">About</a>
+                    <ul class="subnav">
+                      <li class="subnav-item">
+                        <a href="#" class="subnav-link">How we started</a>
+                      </li>
+                      <li class="subnav-item">
+                        <a href="#" class="subnav-link">About the Team</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">News</a>
+                </li>
+            </ul>
+        </div> <!-- /masthead-inner -->  
+    </div>
+    <div class="wrapper" id="main">
         <div class="page">
             <div class="page-hdg">
                 <!-- !INCORRECT HIERARCHY -->
-                <h3 id="header" class="hdg hdg_1">About the Team</h3>
-                <h1 id="header" class="hdg hdg_2">and how we work for you</h1>
+                <h3 class="hdg hdg_1">About the Team</h3>
+                <h1 class="hdg hdg_2">and how we work for you</h1>
             </div>
             <!-- !NO ARIA ROLE -->
             <div class="breadcrumb">
-              <a href="#" class="breadcrumb-link">About</a>
+              <a href="#" class="breadcrumb-link breadcrumb-link_darker">About</a>
               <span>About the Team</span>
             </div>
-            <ul class="vList" id="main">
-                <li>
-                    <!-- !NO ALT ATTRIBUTE -->
-                    <img src="https://placebear.com/g/320/240" />
-                    <p>Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
-                    <button class="btn">Read more</button>
-                </li>
-                <li>
-                    <p>Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
-                    <button class="btn">Read more</button>
-                </li>
-            </ul>
+            <div class="vr vr_2x">
+                <ul class="vList" id="main">
+                    <li>
+                        <div class="media">
+                            <div class="media-media">
+                                <img src="https://placebear.com/g/320/240" />
+                            </div>
+                            <div class="media-bd">
+                                <h2 class="hdg hdg_2">Meet our CEO</h2>
+                                <p>Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
+                                <button class="btn">Read more</button>
+                            </div>
+                        <!-- !NO ALT ATTRIBUTE -->
+                        </div>                    
+                    </li>
+                    <li>
+                        <div class="media">
+                            <div class="media-bd">
+                                <h2 class="hdg hdg_2">About our programs</h2>
+                                <p>Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div> <!-- /wrapper -->
     <!-- !NO ARIA ROLE -->
-    <footer class="footer">
+    <div class="footer">
         <div class="wrapper">
-            <span>&copy; Copyright 2016 | All Rights Reserved | <a href="#">Contact info</a></span>
+            <div class="vr vr_2x">
+                <ul class="flexblocks">
+                    <li>
+                        <div class="cta">
+                            <div class="cta-hd">
+                                <h4 class="hdg hdg_3">Where We Are</h4>
+                            </div>
+                            <div class="cta-bd">
+                                <p>1033 W Van Buren, Suite 700</p>
+                                <p>Chicago, IL 60607</p>
+                            </div>                            
+                        </div>                            
+                    </li>
+                    <li>
+                        <div class="cta">
+                            <div class="cta-hd">
+                                <h4 class="hdg hdg_3">Follow Us</h4>
+                            </div>
+                            <div class="cta-bd">
+                                <img src="http://placehold.it/150x100?text=twitter" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cta">
+                            <div class="cta-hd">
+                                <h4 class="hdg hdg_3">Who We Are</h4>
+                            </div>
+                            <div class="cta-bd">
+                                <ul class="vList">
+                                    <li>
+                                        <a href="#" class="anchor">How we got started</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor">About the team</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://google.com" class="anchor">Our Company Partner</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="vr vr_2x">
+                <span>&copy; Copyright 2016 | All Rights Reserved | <a href="#" class="anchor anchor_midnight">Contact info</a></span>
+            </div>
         </div> <!-- /wrapper -->
-    </footer>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- build:js assets/scripts/main.js?v=@@version -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <script src="assets/scripts/shim.js?v=@@version"></script>
+    <script src="assets/scripts/App.js?v=@@version"></script>
+    <script src="assets/scripts/main.js?v=@@version"></script>
+    <!-- endbuild -->
 </body>
 </html>
