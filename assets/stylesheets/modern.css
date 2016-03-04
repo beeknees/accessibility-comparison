@@ -133,27 +133,23 @@ body {
 .masthead:after:after {
   clear: both; }
 
-/*.masthead:after {
-  clear: both;
-}
-*/
 .masthead_darker {
   background-color: #69788c; }
 
-.masthead-inner {
-  width: 100%;
-  max-width: 1025px;
-  margin: 0 auto;
-  padding: 0 20px; }
-  .masthead-inner:before, .masthead-inner:after {
-    content: '';
-    display: table; }
-  .masthead-inner:after {
-    clear: both; }
-
-.masthead-inner > * {
-  display: inline-block;
-  vertical-align: middle; }
+@media (min-width: 768px) {
+  .masthead-inner {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 0 20px; }
+    .masthead-inner:before, .masthead-inner:after {
+      content: '';
+      display: table; }
+    .masthead-inner:after {
+      clear: both; }
+  .masthead-inner > * {
+    display: inline-block;
+    vertical-align: middle; } }
 
 /* ---------------------------------------------------------------------
  Modules: Landmarks: Footer
@@ -205,8 +201,13 @@ p + p {
 .navbar {
   /*float: left;*/ }
 
+.navbar_mobile {
+  display: block; }
+
+.navbar_desktop {
+  display: none; }
+
 .navbar > * {
-  display: inline-block;
   font-size: 1rem; }
 
 .navbar-item {
@@ -254,6 +255,14 @@ p + p {
   color: #292D33;
   text-decoration: none; }
 
+@media (min-width: 768px) {
+  .navbar > * {
+    display: inline-block; }
+  .navbar_mobile {
+    display: none; }
+  .navbar_desktop {
+    display: block; } }
+
 /* ---------------------------------------------------------------------
  Modules: Objects: Breadcrumb
 ------------------------------------------------------------------------ */
@@ -283,26 +292,23 @@ p + p {
 /* ---------------------------------------------------------------------
  Modules: Objects: Media
 ------------------------------------------------------------------------ */
-.media:before, .media:after {
-  content: '';
-  display: table; }
-
-.media:after {
-  clear: both; }
-
-.media-media {
-  float: left;
-  margin-right: 20px; }
-
-.media-bd {
-  overflow: hidden; }
+@media (min-width: 764px) {
+  .media:before, .media:after {
+    content: '';
+    display: table; }
+  .media:after {
+    clear: both; }
+  .media-media {
+    float: left;
+    margin-right: 20px; }
+  .media-bd {
+    overflow: hidden; } }
 
 /* ---------------------------------------------------------------------
  Modules: Objects: SearchBar
 ------------------------------------------------------------------------ */
 .searchBar {
-  position: relative;
-  float: right; }
+  position: relative; }
 
 .searchBar:after {
   content: '';
@@ -313,6 +319,10 @@ p + p {
   position: absolute;
   right: 0;
   top: 0; }
+
+@media (min-width: 768px) {
+  .searchBar {
+    float: right; } }
 
 /* ---------------------------------------------------------------------
  Modules: Objects: Skip (skip to nav link)
@@ -394,7 +404,8 @@ p + p {
 .input {
   padding: 8px;
   border: 1px solid #292D33;
-  border-radius: 3px; }
+  border-radius: 3px;
+  width: 100%; }
 
 /* ---------------------------------------------------------------------
  Modules: Repeaters: vList
@@ -408,10 +419,6 @@ p + p {
 /* ---------------------------------------------------------------------
  Modules: Repeaters: Flexblocks
 ------------------------------------------------------------------------ */
-.flexblocks {
-  display: flex;
-  justify-content: space-between; }
-
 .flexblocks > * {
   box-sizing: border-box; }
 
@@ -421,6 +428,16 @@ p + p {
 .flexblocks a {
   display: block;
   box-sizing: border-box; }
+
+.flexblocks > * + * {
+  margin-top: 25px; }
+
+@media (min-width: 768px) {
+  .flexblocks {
+    display: flex;
+    justify-content: space-between; }
+  .flexblocks > * + * {
+    margin-top: 0; } }
 
 /* ---------------------------------------------------------------------
  Modules: Repeaters: VR
