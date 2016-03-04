@@ -92,9 +92,12 @@ textarea {
   border: 0;
   padding: 0; }
 
+html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px; }
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%; }
 
 /* ---------------------------------------------------------------------
  Variables
@@ -119,7 +122,8 @@ body {
  Modules: Landmarks: Masthead
 ------------------------------------------------------------------------ */
 .masthead {
-  background-color: #C3CAD5;
+  /*background-color: $GHOST;*/
+  background-color: #69788c;
   padding: 10px;
   margin-bottom: 25px; }
 
@@ -156,6 +160,7 @@ body {
 ------------------------------------------------------------------------ */
 .footer {
   background-color: #C3CAD5;
+  background-color: #69788c;
   border-top: 1px solid #292D33;
   margin-top: 20px;
   padding: 20px 0;
@@ -169,6 +174,18 @@ body {
   margin: 0 auto;
   padding: 0 20px; }
 
+.flex-stack {
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: column; }
+
+.flex-stack > .masthead {
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.flex-stack > .footer {
+  flex-grow: 0; }
+
 /* ---------------------------------------------------------------------
  Modules: Containers: Page
 ------------------------------------------------------------------------ */
@@ -178,20 +195,24 @@ body {
 .page-hdg > * {
   display: inline-block; }
 
-p {
-  line-height: 1.25rem;
-  font-size: .75rem;
-  color: #a58a1d; }
-
 p + p {
   margin-top: 10px; }
 
+/* ---------------------------------------------------------------------
+ Modules: Content: Text
+------------------------------------------------------------------------ */
 .txt {
   color: #333; }
 
 .txt_block {
   display: block;
   line-height: 1.5; }
+
+.mix-txt_bright {
+  color: #ffffff; }
+
+.mix-txt_light {
+  color: #FCFCFD; }
 
 /*@import "modules/containers/containers/_container";*/
 /* ---------------------------------------------------------------------
@@ -207,7 +228,8 @@ p + p {
   display: none; }
 
 .navbar > * {
-  font-size: 1rem; }
+  font-size: 1rem;
+  display: block; }
 
 .navbar-item {
   position: relative; }
@@ -217,8 +239,11 @@ p + p {
 
 .navbar-link {
   padding: 20px;
-  color: #ffffff;
+  color: #ccc;
   text-decoration: none; }
+
+.navbar-link_contrast {
+  color: #ffffff; }
 
 .navbar-link_active {
   background-color: #C3CAC4; }
@@ -304,6 +329,12 @@ p + p {
     overflow: hidden; } }
 
 /* ---------------------------------------------------------------------
+ Modules: Objects: Articles
+------------------------------------------------------------------------ */
+.article > * {
+  margin-bottom: 10px; }
+
+/* ---------------------------------------------------------------------
  Modules: Objects: SearchBar
 ------------------------------------------------------------------------ */
 .searchBar {
@@ -316,7 +347,7 @@ p + p {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 0;
+  right: -20px;
   top: 0; }
 
 @media (min-width: 768px) {
@@ -346,9 +377,10 @@ p + p {
 .btn {
   border: none;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
   background-color: #a58a1d;
-  color: #ffffff; }
+  color: #ffffff;
+  font-size: 1rem; }
 
 .btn_accessible {
   background-color: #8d7400; }
@@ -396,6 +428,18 @@ p + p {
 
 .anchor_small {
   font-size: .75rem; }
+
+.mix-anchor_bright {
+  color: #ffffff; }
+
+.mix-anchor_light {
+  color: #FCFCFD; }
+
+.mix-anchor_beige {
+  color: #a58a1d; }
+
+.mix-anchor_beiger {
+  color: #8d7400; }
 
 /* ---------------------------------------------------------------------
  Modules: Content: Input

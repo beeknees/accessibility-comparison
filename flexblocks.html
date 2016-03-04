@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
     <!-- SEO -->
-    <title>Compare Accessibilitytest</title>
+    <title>Compare Accessibility</title>
 
     <!-- STYLESHEETS -->
-    <!-- build:css assets/styles/head.css?v=@@version -->
+    <!-- build:css assets/styles/head.css?v=1.0.0 -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=@@version" />
-    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=@@version" /><![endif]-->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=1.0.0" />
+    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=1.0.0" /><![endif]-->
     <!-- POLYFILLS -->
-    <!-- build:js assets/scripts/head.js?v=@@version -->
+    <!-- build:js assets/scripts/head.js?v=1.0.0 -->
     <!-- endbuild -->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
@@ -100,18 +100,53 @@
                                 <img src="https://placebear.com/g/320/240" alt="CEO Bearington Grizzwald" />
                             </div>
                             <div class="media-bd">
-                                <h2 class="hdg hdg_2" id="meet-ceo">Meet our CEO</h2>
-                                <p class="txt">Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
-                                <button class="btn btn_accessible" aria-labelledby="meet-ceo">Meet our CEO full story</button>
+                                <div class="article">
+                                    <div class="article-hd">
+                                        <h2 class="hdg hdg_2" id="meet-ceo">Meet our Mascot</h2>
+                                    </div>
+                                    <div class="article-bd">
+                                        <p class="txt">Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
+                                    </div>
+                                    <div class="article-ft">
+                                        <button class="btn btn_accessible" aria-labelledby="meet-ceo">Meet our CEO full story</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="media">
-                            <div class="media-bd">
+                        <div class="article">
+                            <div class="article-hd">
                                 <h2 class="hdg hdg_2">About our programs</h2>
+                            </div>
+                            <div class="article-bd">
                                 <p class="txt">Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
+                            </div>
+                            <div class="article-ft">
                                 <button class="btn btn_accessible">About our programs full story</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="article">
+                            <div class="article-hd">
+                                <h2 class="hdg hdg_2">List of Programs</h2>
+                            </div>
+                            <div class="article-bd">
+                                <ul class="vList">
+                                    <li>
+                                        <a href="#" class="anchor mix-anchor_beiger">Beginner Program</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor mix-anchor_beiger">Intermediate Programs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="anchor mix-anchor_beiger">Advanced Programs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="article-ft">
+                                <button class="btn btn_accessible">Read more</button>
                             </div>
                         </div>
                     </li>
@@ -195,15 +230,5 @@
             </div>
         </div> <!-- /wrapper -->
     </footer>
-
-
-    <!-- JAVASCRIPT -->
-    <!-- build:js assets/scripts/main.js?v=@@version -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <script src="assets/scripts/shim.js?v=@@version"></script>
-    <script src="assets/scripts/App.js?v=@@version"></script>
-    <script src="assets/scripts/main.js?v=@@version"></script>
-    <!-- endbuild -->
 </body>
 </html>

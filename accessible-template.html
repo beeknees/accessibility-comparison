@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--[if IE]><meta http-equiv="cleartype" content="on" /><![endif]-->
     <!-- SEO -->
-    <title>Compare Accessibility - accessible</title>
+    <title>Compare Accessibility</title>
 
     <!-- STYLESHEETS -->
-    <!-- build:css assets/styles/head.css?v=@@version -->
+    <!-- build:css assets/styles/head.css?v=1.0.0 -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen, projection" href="assets/stylesheets/modern.css?v=@@version" />
-    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=@@version" /><![endif]-->
+    <link rel="stylesheet" media="screen, projection" href="assets/styles/modern.css?v=1.0.0" />
+    <!--[if lte IE 8]><link rel="stylesheet" media="screen, projection" href="assets/styles/legacy.css?v=1.0.0" /><![endif]-->
     <!-- POLYFILLS -->
-    <!-- build:js assets/scripts/head.js?v=@@version -->
+    <!-- build:js assets/scripts/head.js?v=1.0.0 -->
     <!-- endbuild -->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 
@@ -39,162 +39,199 @@
     </script>
 </head>
 <body>
-    <!-- CONTENT -->
+        <!-- CONTENT -->
     <div class="skip">
         <a href="#main">Skip to Main Content</a>
     </div>
-    <header class="masthead masthead_darker" role="banner">
-        <div class="masthead-inner">
-            <a href="index.html" class="logo">
-                <img src="http://placehold.it/300x100/000000?text=Your Company Logo"  alt="Company Name" />
-            </a>
-            <div role="navigation" aria-label="main">
-            <ul class="navbar navbar_darker">
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="navbar-link navbar-link_active navbar-link_active_darker js-dropdown-trigger"
-                        class="navbar-item"
-                        id="hasSubMenu"
-                        aria-owns="subMenu"
-                        aria-controls="subMenu"
-                        aria-expanded="false">About</a>
-                        <ul class="subnav js-dropdown-menu" 
-                            id="subMenu"
-                            aria-labelledby="hasSubMenu"
-                            aria-expanded="true"
-                            role="group">
-                          <li class="subnav-item">
-                            <a href="#" class="subnav-link">How we started</a>
-                          </li>
-                          <li class="subnav-item">
-                            <a href="#" class="subnav-link">About the Team</a>
-                          </li>
+    <div class="flex-stack">
+        <div class="masthead masthead_darker" role="banner">
+            <div class="masthead-inner">
+                <a href="index.html" class="logo">
+                    <img src="http://placehold.it/300x100/000000?text=Your Company Logo"  alt="Company Name" />
+                </a>
+                <div role="navigation">
+                    <ul class="navbar navbar_darker">
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link navbar-link_contrast">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link navbar-link_contrast navbar-link_active navbar-link_active_darker js-dropdown-trigger"
+                                class="navbar-item"
+                                id="hasSubMenu"
+                                aria-owns="subMenu"
+                                aria-controls="subMenu"
+                                aria-expanded="false">About</a>
+                                <ul class="subnav js-dropdown-menu" 
+                                    id="subMenu"
+                                    aria-labelledby="hasSubMenu"
+                                    aria-expanded="true"
+                                    role="group">
+                                  <li class="subnav-item">
+                                    <a href="#" class="subnav-link">How we started</a>
+                                  </li>
+                                  <li class="subnav-item">
+                                    <a href="#" class="subnav-link">About the Team</a>
+                                  </li>
+                            </ul>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link navbar-link_contrast">News</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="navbar-link">News</a>
-                </li>
-            </ul>
+                </div>
+                <div class="searchBar">
+                    <label for="search" class="visuallyHidden">Search</label>
+                    <input type="search" name="search" id="search" class="input" />
+                </div>
+            </div> <!-- /masthead-inner -->  
         </div>
-        <div class="searchBar">
-            <label for="search" class="visuallyHidden">Search</label>
-            <input type="search" name="search" id="search" class="input" />
-        </div>
-        </div> <!-- /masthead-inner -->  
-    </header>
-    <div class="wrapper" role="main" id="main">
-        <div class="page">
-            <div class="page-hdg">
-                <h1 class="hdg hdg_1">About the Team <span class="hdg hdg_2">and how we work for you</span></h1>                
-            </div>
-            <div class="breadcrumb" role="navigation">
-                <a href="#" class="breadcrumb-link breadcrumb-link_darker">About</a>
-                <span>About the Team</span>
-            </div>
-            <div class="vr vr_2x">
-                <ul class="vList">
-                    <li>
-                        <div class="media">
-                            <div class="media-media">
-                                <img src="https://placebear.com/g/320/240" alt="CEO Bearington Grizzwald" />
+        <div class="wrapper" role="main" id="main">
+            <div class="page">
+                <div class="page-hdg">
+                    <h1 class="hdg hdg_1">About the Team <span class="hdg hdg_2">and how we work for you</span></h1>                
+                </div>
+                <div class="breadcrumb" role="navigation">
+                    <a href="#" class="breadcrumb-link breadcrumb-link_darker">About</a>
+                    <span>About the Team</span>
+                </div>
+                <div class="vr vr_2x">
+                    <ul class="vList">
+                        <li>
+                            <div class="media">
+                                <div class="media-media">
+                                    <img src="https://placebear.com/g/320/240" alt="CEO Bearington Grizzwald" />
+                                </div>
+                                <div class="media-bd">
+                                    <div class="article">
+                                        <div class="article-hd">
+                                            <h2 class="hdg hdg_2" id="meet-ceo">Meet our Mascot</h2>
+                                        </div>
+                                        <div class="article-bd">
+                                            <p class="txt">Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
+                                        </div>
+                                        <div class="article-ft">
+                                            <button class="btn btn_accessible" aria-labelledby="meet-ceo">Meet our CEO full story</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="media-bd">
-                                <h2 class="hdg hdg_2" id="meet-ceo">Meet our CEO</h2>
-                                <p class="txt">Cupcake ipsum dolor sit amet. Chocolate bar sweet roll cookie gingerbread donut candy canes danish gummi bears. Sweet roll I love chupa chups halvah powder bonbon. Cake jelly jelly-o. Cheesecake macaroon brownie carrot cake cake cupcake I love. Pastry danish chocolate carrot cake fruitcake sweet roll I love gummi bears croissant.</p>
-                                <button class="btn btn_accessible" aria-labelledby="meet-ceo">Meet our CEO full story</button>
+                        </li>
+                        <li>
+                            <div class="article">
+                                <div class="article-hd">
+                                    <h2 class="hdg hdg_2">About our programs</h2>
+                                </div>
+                                <div class="article-bd">
+                                    <p class="txt">Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
+                                </div>
+                                <div class="article-ft">
+                                    <button class="btn btn_accessible">About our programs full story</button>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media-bd">
-                                <h2 class="hdg hdg_2">About our programs</h2>
-                                <p class="txt">Chocolate dragée pie marzipan tart I love lemon drops chocolate cheesecake. Tootsie roll halvah sugar plum jelly. Jelly I love toffee cotton candy marshmallow dessert I love. Liquorice I love cake I love lollipop powder topping soufflé I love. Wafer I love powder pastry chocolate cake. Marshmallow lemon drops pastry topping cheesecake cake. Tiramisu sugar plum ice cream icing. Brownie cupcake cookie soufflé liquorice pie jelly.</p>
-                                <button class="btn btn_accessible">About our programs full story</button>
+                        </li>
+                        <li>
+                            <div class="article">
+                                <div class="article-hd">
+                                    <h2 class="hdg hdg_2">List of Programs</h2>
+                                </div>
+                                <div class="article-bd">
+                                    <ul class="vList">
+                                        <li>
+                                            <a href="#" class="anchor mix-anchor_beiger">Beginner Program</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="anchor mix-anchor_beiger">Intermediate Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="anchor mix-anchor_beiger">Advanced Programs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-ft">
+                                    <button class="btn btn_accessible">Read more</button>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- <div class="vr vr_2x">
-                <ul class="flexblocks">
-                    <li>
-                        <a href="http://google.com">
-                            <img src="http://placehold.it/250x150?text=cta1" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://google.com">
-                            <img src="http://placehold.it/250x150?text=cta2" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://google.com">
-                            <img src="http://placehold.it/250x150?text=cta3" />
-                        </a>
-                    </li>
-                </ul>
-            </div> -->
-        </div>
-    </div> <!-- /wrapper -->
-    <footer class="footer" role="contentinfo">
-        <div class="wrapper">
-            <div class="vr vr_2x">
-                <h3 class="visuallyHidden">Connect and Links</h3>
-                <ul class="flexblocks">
-                    <li>
-                        <div class="cta">
-                            <div class="cta-hd">
-                                <h4 class="hdg hdg_3">Where We Are</h4>
-                            </div>
-                            <div class="cta-bd">
-                                <span class="txt txt_block">1033 W Van Buren, Suite 700</span>
-                                <span class="txt txt_block">Chicago, IL 60607</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cta">
-                            <div class="cta-hd">
-                                <h4 class="hdg hdg_3">Follow Us</h4>
-                            </div>
-                            <div class="cta-bd">
-                                <a href="http://twitter.com">
-                                    <img src="http://placehold.it/150x100?text=twitter" alt="twitter" />
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="cta">
-                            <div class="cta-hd">
-                                <h4 class="hdg hdg_3">Who We Are</h4>
-                            </div>
-                            <div class="cta-bd">
-                                <ul class="vList">
-                                    <li>
-                                        <a href="http://google.com" class="anchor anchor_midnight">How we got started</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://google.com" class="anchor anchor_midnight">About the team</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://google.com" role="tooltip" target="blank" class="anchor anchor_midnight">Our Company Partner
-                                            <span class="visuallyHidden">Opens in a new window</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="vr vr_2x">
-                <span class="hdg hdg_small">&copy; Copyright 2016 | All Rights Reserved |</span> <a href="#" class="anchor anchor_midnight anchor_small">Contact info</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="vr vr_2x">
+                    <ul class="flexblocks">
+                        <li>
+                            <a href="http://google.com">
+                                <img src="http://placehold.it/250x150?text=cta1" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://google.com">
+                                <img src="http://placehold.it/250x150?text=cta2" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://google.com">
+                                <img src="http://placehold.it/250x150?text=cta3" />
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
             </div>
         </div> <!-- /wrapper -->
-    </footer>
+        <div class="footer footer_contrast" role="contentinfo">
+            <div class="wrapper">
+                <div class="vr vr_2x">
+                    <h3 class="visuallyHidden">Connect and Links</h3>
+                    <ul class="flexblocks">
+                        <li>
+                            <div class="cta">
+                                <div class="cta-hd">
+                                    <h4 class="hdg hdg_3">Where We Are</h4>
+                                </div>
+                                <div class="cta-bd">
+                                    <span class="txt txt_block mix-txt_bright">1033 W Van Buren, Suite 700</span>
+                                    <span class="txt txt_block mix-txt_bright">Chicago, IL 60607</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cta">
+                                <div class="cta-hd">
+                                    <h4 class="hdg hdg_3">Follow Us</h4>
+                                </div>
+                                <div class="cta-bd">
+                                    <a href="http://twitter.com">
+                                        <img src="http://placehold.it/150x100?text=twitter" alt="twitter" />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cta">
+                                <div class="cta-hd">
+                                    <h4 class="hdg hdg_3">Who We Are</h4>
+                                </div>
+                                <div class="cta-bd">
+                                    <ul class="vList">
+                                        <li>
+                                            <a href="http://google.com" class="anchor mix-anchor_bright">How we got started</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://google.com" class="anchor mix-anchor_bright">About the team</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://google.com" role="tooltip" target="blank" class="anchor mix-anchor_bright">Our Company Partner
+                                                <span class="visuallyHidden">Opens in a new window</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vr vr_2x">
+                    <span class="hdg hdg_small">&copy; Copyright 2016 | All Rights Reserved |</span> <a href="#" class="anchor mix-anchor_bright anchor_small">Contact info</a>
+                </div>
+            </div> <!-- /wrapper -->
+        </div>
+    </div>
 </body>
 </html>
