@@ -165,8 +165,7 @@ body {
  Modules: Containers: Wrapper
 ------------------------------------------------------------------------ */
 .wrapper {
-  width: 100%;
-  max-width: 1025px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 20px; }
 
